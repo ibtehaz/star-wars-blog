@@ -13,6 +13,7 @@
         <div class="row">
             <div class="col">
                 <a href="/"><img src="https://www.fillmurray.com/150/255" alt=""></a>
+                <p>test text</p>
             </div>
             <div class="col">
                 <a href="/"><img src="https://www.fillmurray.com/150/255" alt=""></a>
