@@ -1,6 +1,6 @@
 
     <x-header />
-    <!-- <x-sidebar />-->
+   
     <!-- Jumbotron -->
     <!-- <div class="jumbotron">
         <div class="container">
@@ -50,7 +50,8 @@
         </div> -->
         <div class="container">
             <div class="row">
-                <div class="col">Column</div>
+                <x-sidebar />
+                <div class="col">Column</div> 
                 <div class="col">Column</div>
                 <div class="col">Column</div>
                 <div class="col">Column</div>
