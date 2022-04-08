@@ -51,7 +51,7 @@
         <div class="container">
             <div class="row">
                 <x-sidebar />
-                <div class="col">Column</div> 
+                <div class="col">Second Page</div> 
                 <div class="col">Column</div>
                 <div class="col">Column</div>
                 <div class="col">Column</div>
