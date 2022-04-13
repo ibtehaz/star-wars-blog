@@ -32,8 +32,8 @@
 
                    </ul> -->
                   
-                   <form class="d-flex me-lg-3" style= "margin-left: auto!important;">
-                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                   <form method = "GET" action="#" class="d-flex me-lg-3" style= "margin-left: auto!important;">
+                       <input class="form-control me-2" type="text" name="search" placeholder="Search" aria-label="Search" value= "{{ request('search')}}">
                        <button class="btn btn-outline-danger" type="submit">Search</button>
                    </form>
                     <form class="d-flex">
