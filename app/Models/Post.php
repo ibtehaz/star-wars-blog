@@ -14,13 +14,21 @@ class Post extends Model
     public function scopeFilter($query, array $filters)
     {
 
-        $query->when($filters['search'] ?? false, function ($query, $search) {
-           
-                $query->where('title', 'like', '%' . $search . '%')
-                    ->orWhere('body', 'like', '%' . $search . '%');
-            
-        });
+        $query->when($filters['search'] ?? false, fn ($query, $search) =>
 
+        $query->where('title', 'like', '%' . $search . '%')
+            ->orWhere('body', 'like', '%' . $search . '%'));
+
+
+        $query->when(
+            $filters['category'] ?? false,
+            fn ($query, $category) =>
+                $query->whereHas(
+                    'category',
+                    fn ($query) =>
+                    $query->where('slug', $category)
+                )
+            );
     }
 
     public function category()
@@ -32,4 +40,3 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 }
-
