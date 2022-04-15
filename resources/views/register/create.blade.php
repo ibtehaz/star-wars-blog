@@ -51,9 +51,11 @@
                     </button>
                 </div>
             @if($errors->any())
+                <ul>
                 @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
+                    <li class="text-sm text-gray-500">{{ $error }}</li>
                 @endforeach
+                </ul>
             @endif
             </form>
         </main>
