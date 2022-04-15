@@ -1,7 +1,9 @@
-<nav class="md:flex md:justify-between md:items-center">
+<nav class="md:flex md:justify-between md:items-center top-0 p-2 pt-4 pb-4 rounded-xl" style="color:rgb(237, 242, 244);background-color: rgb(43, 45, 66);">
     <div>
         <a href="/">
-            <img src="/images/logo.svg" alt="Laracasts Logo" width="165" height="16">
+            <!--Change logo-->
+            <!-- <img src="/images/logo.svg" alt="Laracasts Logo" width="165" height="16"> -->
+            <header class="text-2xl font-extrabold">Star Wars Blog</header>
         </a>
     </div>
 
@@ -17,7 +19,7 @@
         <a href="/login" class="text-xs font-bold uppercase ml-6">Login</a>
         @endauth
 
-        <a href="#" class="bg-red-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+        <a href="#" class=" ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5" style="background-color: rgb(239, 35, 60);">
             Join Newsletter
         </a>
     </div>
