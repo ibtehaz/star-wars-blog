@@ -8,7 +8,10 @@
                     <label for="name" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                         Name
                     </label>
-                    <input type="text" class="border border-gray-400 p-2 w-full" name="name" id="name" required>
+                    <input type="text" class="border border-gray-400 p-2 w-full" name="name" id="name" value="{{ old('name') }}" required>
+                    @error('name')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
                 
 
@@ -16,14 +19,20 @@
                     <label for="username" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                         Username
                     </label>
-                    <input type="text" class="border border-gray-400 p-2 w-full" name="username" id="username" required>
+                    <input type="text" class="border border-gray-400 p-2 w-full" name="username" id="username" value="{{ old('username') }}" required>
+                    @error('username')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <div class="mb-6">
                     <label for="email" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                         Email
                     </label>
-                    <input type="email" class="border border-gray-400 p-2 w-full" name="email" id="email" required>
+                    <input type="email" class="border border-gray-400 p-2 w-full" name="email" id="email" value="{{ old('email') }}" required>
+                    @error('email')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <div class="mb-6">
@@ -31,6 +40,9 @@
                         Password
                     </label>
                     <input type="password" class="border border-gray-400 p-2 w-full" name="password" id="password" required>
+                    @error('password')
+                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror   
                 </div>
 
                 <div class="mb-6">
@@ -38,7 +50,11 @@
                         Submit
                     </button>
                 </div>
-
+            @if($errors->any())
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            @endif
             </form>
         </main>
     </section>
