@@ -2,7 +2,7 @@
     <div>
         <a href="/">
             <!--Change logo-->
-            <!-- <img src="/images/logo.svg" alt="Laracasts Logo" width="165" height="16"> -->
+            <!-- <img src="/images/star-wars-logo.png" alt="Star Wars Logo" width="165" height="16"> -->
             <header class="text-2xl font-extrabold">Star Wars Blog</header>
         </a>
     </div>
