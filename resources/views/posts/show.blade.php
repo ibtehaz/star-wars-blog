@@ -1,6 +1,6 @@
 <x-layout>
     <section class="px-6 py-8">
-       
+
 
         <main class="max-w-6xl mx-auto mt-10 lg:mt-20 space-y-6">
             <article class="max-w-4xl mx-auto lg:grid lg:grid-cols-12 gap-x-10">
@@ -21,14 +21,12 @@
 
                 <div class="col-span-8">
                     <div class="hidden lg:flex justify-between mb-6">
-                        <a href="/"
-                            class="transition-colors duration-300 relative inline-flex items-center text-lg hover:text-blue-500">
+                        <a href="/" class="transition-colors duration-300 relative inline-flex items-center text-lg hover:text-blue-500">
                             <svg width="22" height="22" viewBox="0 0 22 22" class="mr-2">
                                 <g fill="none" fill-rule="evenodd">
                                     <path stroke="#000" stroke-opacity=".012" stroke-width=".5" d="M21 1v20.16H.84V1z">
                                     </path>
-                                    <path class="fill-current"
-                                        d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z">
+                                    <path class="fill-current" d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z">
                                     </path>
                                 </g>
                             </svg>
@@ -37,34 +35,63 @@
                         </a>
 
                         <div class="space-x-2">
-                           
-
-                            <x-category-button :category="$post->category"/>
 
 
+                            <x-category-button :category="$post->category" />
 
 
 
 
-                            
+
+
+
                         </div>
                     </div>
 
                     <h1 class="font-bold text-3xl lg:text-4xl mb-10">
-                       
-                            {{ $post->title }}
-                    
+
+                        {{ $post->title }}
+
                     </h1>
 
                     <div class="space-y-4 lg:text-lg leading-loose">
-                       
-                            {!! $post->body !!}
+
+                        {!! $post->body !!}
                     </div>
                 </div>
+                <section class="col-span-8 col-start-5 mt-10 space-y-6">
+                    @auth 
+                        <form method="POST" action="/posts/{{ $post->slug }}/comments" class="border border-gray-200 p-6 rounded-xl">
+                            @csrf
+                            <header class="flex items-center">
+                            <img src="https://i.pravatar.cc/60?u={{ auth()->id()}}" alt="" width="40" class="rounded-full">
+                                <h2 class="ml-4">
+                                    Don't forget to Leave a comment!
+                                </h2>
+                            </header>
+                            <div class="mt-6">
+                                <textarea name="body" class="w-full text-sm focus:outline-none focus:ring" cols="30" rows="5" placeholder="Say something!" required></textarea>
+                                @error('body')
+                                    <span class="text-xs text-red-800">{{$message}}</span>
+                                @enderror
+                            </div>
+                            <div class="flex justify-end border-t border-gray-200 pt-6">
+                                <button type="submit"  class=" ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5 hover:bg-red-800" style="background-color: rgb(239, 35, 60);">Post</button>
+                            </div>
+                        </form>
+                    @else 
+                    <p>
+                        <a href="/login" class="hover:underline">Log in to leave a commment</a>
+                    </p>
+                    @endauth
+                    @foreach($post->comments as $comment)
+                        <x-comment-card :comment="$comment"  />
+                    @endforeach
+                </section>
             </article>
         </main>
 
-       
+
     </section>
 
 </x-layout>
