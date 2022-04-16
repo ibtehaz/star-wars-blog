@@ -16,7 +16,7 @@
                     <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
                 </div>
 
-                <button type="submit" class="transition-colors duration-300 hover:bg-red-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8" style="background-color: rgb(239, 35, 60);">
+                <button type="submit" class="transition-colors duration-300 hover:bg-red-800 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8" style="background-color: rgb(239, 35, 60);">
                     Subscribe
                 </button>
             </form>
