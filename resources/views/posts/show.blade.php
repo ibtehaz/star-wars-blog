@@ -64,9 +64,9 @@
                         <form method="POST" action="/posts/{{ $post->slug }}/comments" class="border border-gray-200 p-6 rounded-xl">
                             @csrf
                             <header class="flex items-center">
-                            <img src="https://i.pravatar.cc/60?u={{ auth()->id()}}" alt="" width="40" class="rounded-full">
+                            <img src="https://avatars.dicebear.com/api/bottts/{{ auth()->id()}}.svg" alt="" width="40" class="rounded-full">
                                 <h2 class="ml-4">
-                                    Don't forget to Leave a comment!
+                                    Don't forget to leave a comment!
                                 </h2>
                             </header>
                             <div class="mt-6">
