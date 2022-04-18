@@ -21,7 +21,6 @@ class AdminsOnly
        if(auth()->user()?->username !=='admin'){
        abort(403, 'Admins only');
        }
-       
 
         return $next($request);
     }

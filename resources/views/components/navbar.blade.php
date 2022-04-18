@@ -18,7 +18,7 @@
 
           
                 <x-dropdown-item
-                    href="/posts"
+                    href="/admin/posts/create"
                     :active="request()->is('admin/posts')"
                 >
                     Dashboard
