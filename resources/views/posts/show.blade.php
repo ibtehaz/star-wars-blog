@@ -12,7 +12,7 @@
                     </p>
 
                     <div class="flex items-center lg:justify-center text-sm mt-4">
-                        <img src="/images/lary-avatar.svg" alt="Lary avatar">
+                        <img src="https://avatars.dicebear.com/api/bottts/{{ $post->user_id}}.svg" width="40" alt="avatar">
                         <div class="ml-3 text-left">
                             <h5 class="font-bold"><a
                                     href="/?author={{ $post->author->username }}">{{ $post->author->name }}</a></h5>
@@ -68,8 +68,9 @@
                             class="border border-gray-200 p-6 rounded-xl">
                             @csrf
                             <header class="flex items-center">
-                                <img src="https://avatars.dicebear.com/api/bottts/{{ auth()->id() }}.svg" alt="" width="40"
-                                    class="rounded-full">
+
+                            <img src="https://avatars.dicebear.com/api/bottts/{{ auth()->id()}}.svg" alt="" width="40" class="rounded-full">
+
                                 <h2 class="ml-4">
                                     Don't forget to leave a comment!
                                 </h2>
