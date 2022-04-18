@@ -1,10 +1,14 @@
 <x-layout>
+    
     <div class="mt-10 max-w-md mx-auto border border-gray-200 p-6 rounded-xl">
+        <h1 class="text-center text-2xl font-bold text-gray-800">Create Post</h1>
+        
     <section class="px-6 py-8">
         
-        //x-data is using AlpineJS for dynamic rendering of slugs 
+        
+        {{-- x-data is using AlpineJS for dynamic rendering of slugs  --}}
 
-        <form method="POST" action="/admin/posts"  x-data="{ title: '' }">
+        <form method="POST" action="/admin/posts"  x-data="{ title: '' }" enctype="multipart/form-data">
             @csrf
 
             <div class="mb-6">
@@ -39,6 +43,13 @@
                 @error('slug')
                     <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
                 @enderror
+            </div>
+
+            <div class="mb-6">
+                <label for="thumbnail" class="block mb-2 uppercase font-bold text-xs text-gray-700">
+                    Thumbnail
+                </label>
+                <input type="file" name="thumbnail" id="thumbnail" class="border border-gray-400 p-2 w-full" required>
             </div>
 
 
