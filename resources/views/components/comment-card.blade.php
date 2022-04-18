@@ -2,7 +2,7 @@
 <article class=" space-x-4 border border-black border-opacity-5 flex p-6 rounded-xl" style="color:rgb(237, 242, 244);background-color: rgb(43, 45, 66);">
     <div class="flex-shrink-0">
         <!-- profile img -->
-        <img src="https://i.pravatar.cc/60?u={{ $comment->user_id}}" alt="" width="60" class="rounded-xl">
+        <img src="https://avatars.dicebear.com/api/bottts/{{ $comment->user_id}}.svg" alt="" width="60" class="rounded-xl">
     </div>
     <div>
         <header class="mb-4">

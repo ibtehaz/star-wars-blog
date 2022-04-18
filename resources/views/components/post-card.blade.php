@@ -3,7 +3,7 @@
 <article {{ $attributes->merge(['class' => "transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl"]) }} >
     <div class="py-6 px-5">
         <div>
-            <img src="/images/illustration-3.png" alt="Blog Post illustration" class="rounded-xl">
+            <img src="{{ asset('storage/'. $post->thumbnail)}}" alt="Blog Post" class="rounded-xl">
         </div>
 
         <div class="mt-8 flex flex-col justify-between">
@@ -40,8 +40,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <a href="/posts/{{ $post->slug }}" class="transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8">Read More</a>
+                <div class="">
+                    <a href="/posts/{{ $post->slug }}" class="ml-5 transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8">Read&nbsp;More</a>
                 </div>
             </footer>
         </div>
