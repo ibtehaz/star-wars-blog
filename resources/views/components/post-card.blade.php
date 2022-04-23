@@ -1,6 +1,6 @@
 @props(['post'])
 
-<article {{ $attributes->merge(['class' => "transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl"]) }} >
+<article {{ $attributes->merge(['class' => "transition-colors duration-300 rounded-xl hover:bg-gray-200 border border-black border-opacity-0 hover:border-opacity-5 "]) }} >
     <div class="py-6 px-5">
         <div>
             <img src="{{ asset('storage/'. $post->thumbnail)}}" alt="Blog Post" class="rounded-xl">
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="">
-                    <a href="/posts/{{ $post->slug }}" class="ml-5 transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8">Read&nbsp;More</a>
+                    <a href="/posts/{{ $post->slug }}" class="ml-5 transition-colors duration-300 text-xs font-semibold bg-red-500 hover:bg-red-600 text-gray-200 rounded-full py-2 px-8">Read&nbsp;More</a>
                 </div>
             </footer>
         </div>

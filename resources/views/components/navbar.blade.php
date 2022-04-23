@@ -1,12 +1,14 @@
-<nav class=" border border-black border-opacity-5 md:flex md:justify-between md:items-center top-0 p-2 pt-4 pb-4 rounded-xl" style="color:rgb(237, 242, 244);background-color: rgb(43, 45, 66);">
+<nav class=" border border-black border-opacity-5 md:flex md:justify-between md:items-center top-0 p-2 rounded-xl" style="color:rgb(237, 242, 244);background-color: rgb(43, 45, 66);">
     <div>
         <a href="/">
             <!--Change logo-->
-            <!-- <img src="/images/star-wars-logo.png" alt="Star Wars Logo" width="165" height="16"> -->
-            <header class="text-2xl font-extrabold">Star Wars Blog</header>
+            <img src="/images/coollogo_com-11658498.png" alt="Star Wars Logo" width="350" height="20">
+            <!-- <header class="text-2xl font-extrabold">Star Wars Blog</header> -->
         </a>
     </div>
-
+    <div class="content-center">
+        <img src="/images/4abc6bd196d065a9556972d19cbd49bd2.png" width="50" height="50">
+    </div>
     <div class="mt-8 md:mt-0 flex items-center">
         @auth
         <x-dropdown>

@@ -11,9 +11,12 @@
     html {
         scroll-behavior: smooth;
     }
+    /* body {
+        background-image: url('/images/tfn-background.gif');
+    } */
 </style>
 
-<body style="font-family: Ubuntu, sans-serif">
+<body style="font-family: Ubuntu, sans-serif  ">
     <section class="p-2">
         <x-navbar/>
 
