@@ -1,6 +1,6 @@
 <!doctype html>
 
-<title>Star Wars Blog</title>
+<title>The Jedi Council</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
