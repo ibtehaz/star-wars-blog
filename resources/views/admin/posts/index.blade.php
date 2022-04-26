@@ -21,7 +21,7 @@
             </ul>
 
         </aside>
-        <div class="flex-1 border border-gray-200 p-6 rounded-xl">
+        <div class="flex-1 border border-gray-600 bg-gray-100 p-6 rounded-xl">
 
             <h1 class="text-center text-2xl font-bold text-gray-800">
                 Manage Post
