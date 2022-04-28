@@ -1,4 +1,4 @@
-# Star Wars Blog
+# The Jedi Council: A Star Wars Blog
 A Laravel blog application styled using Tailwind CSS demonstrating the following programming concepts:
 <li>MVC</li>
 <li>Routing</li>
