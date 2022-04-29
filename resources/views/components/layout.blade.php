@@ -1,6 +1,7 @@
 <!doctype html>
 
-<title>Star Wars Blog</title>
+<title>The Jedi Council</title>
+<link rel="icon" href="/images/favicon.ico">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,12 @@
     html {
         scroll-behavior: smooth;
     }
+    /* body {
+        background-image: url('/images/tfn-background.gif');
+    } */
 </style>
 
-<body style="font-family: Ubuntu, sans-serif">
+<body style="font-family: Ubuntu, sans-serif  ">
     <section class="p-2">
         <x-navbar/>
 

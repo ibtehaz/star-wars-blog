@@ -10,7 +10,7 @@ class AdminPostController extends Controller
 {
     public function index(){
         return view('admin.posts.index', [
-            'posts'=>Post::paginate(50)
+            'posts' => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(15)->withQueryString(),
         ]);
     }
     public function create() 
