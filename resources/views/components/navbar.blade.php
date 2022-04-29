@@ -50,8 +50,8 @@
         </x-dropdown>
 
         @else
-        <a href="/register" class="text-xs font-bold uppercase">Register</a>
-        <a href="/login" class="text-xs font-bold uppercase ml-6">Login</a>
+        <a href="/register" class="text-xs font-bold uppercase hover:text-red-500">Register</a>
+        <a href="/login" class="text-xs font-bold uppercase ml-6 hover:text-red-500">Login</a>
         @endauth
 
         <a href="#newsletter" class=" ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5 hover:bg-red-800" style="background-color: rgb(239, 35, 60);">
