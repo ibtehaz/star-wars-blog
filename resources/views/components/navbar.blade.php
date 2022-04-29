@@ -2,10 +2,10 @@
     <div>
         <a href="/">
             <!--Change logo-->
-           <img src="/images/coollogo_com-11658498.png" alt="Star Wars Logo" width="350" height="20">
+           <!-- <img src="/images/coollogo_com-11658498.png" alt="Star Wars Logo" width="350" height="20"> -->
             
 
-          {{-- <header class="text-2xl font-extrabold" style="font-family: Star Jedi, sans-serif">Star Wars Blog</header>  --}}
+          <h1 class="text-5xl font-normal" style="font-family: 'SF Distant Galaxy', Courier;color:rgb(217, 4, 41); ">THE JEDI COUNCIL</h1>
         </a>
     </div>
     <div class="content-center">
