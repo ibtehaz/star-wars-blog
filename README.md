@@ -28,6 +28,7 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
     <li>Migrate Database</li>
     ```php artisan migrate```
     <li>Run Application</li>
-    ```php artisan serve```
+    ```php artisan serve```</ol>
     
- <ol>
+     
+### Visit our <a href="https://github.com/ibtehaz/star-wars-blog/wiki" target="_blank">wiki page</a> to learn more about how to use our blog application. 
