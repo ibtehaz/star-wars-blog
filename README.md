@@ -33,14 +33,20 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
     
  ### To SAIL-ize your application
 
-<pre>composer require laravel/sail --dev && php artisan sail:install </pre>
+  
  <ol> 
+    <li>To <i>Sail-ize</i> our web application, run the following command after cloning the repository: </li>
+    <pre>composer require laravel/sail --dev && php artisan sail:install </pre>
     <li>After the command ran, we should select 0 for MySQL to install MySQL as part of the docker-compose file created by Laravel Sail. </li>  
     <li>At this point, make sure we have the docker-compose.yml file created at the root of the project. If the file is created, we can run the following command to build and run the needed containers:</li>  
 <pre>COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 ./vendor/bin/sail build</pre>
 <li>As Laravel Sail is a wrapper on top of Docker compose, we can use a BuildKit to instruct docker-compose to build the needed containers. Docker BuildKit is build enhancement available in the newer versions of Docker that makes the docker build faster and efficient.</li>
     <li>To run the containers we will run the following command:</li>
     <pre>./vendor/bin/sail up</pre>
+    <li>Add the APP key in the .env running the following command after the container are running:</li>
+    <pre>./vendor/bin/sail artisan key:generate</pre>
+    <li>After that to create the database structure run the migrations with:</li>
+    <pre>./vendor/bin/sail artisan migrate --force</pre>
     </ol>
 
    
