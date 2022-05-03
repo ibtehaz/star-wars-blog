@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
         Model::unguard();
 
         Gate::define('admin', function (User $user){
-           return $user->username ==='ibtehaz' || $user->username ==='admin' || $user->username ==='admin3';
+           return $user->username ==='Luke Skywalker' || $user->username ==='Yoda' || $user->username ==='Obi-Wan Kenobi' || $user->username ==='Anakin Skywalker' || $user->username ==='Mace Windu';
         });
     }
 }
