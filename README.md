@@ -24,9 +24,11 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
     ```npm install &&
     npm run dev```
     <li>Configuration</li>
-    <ul><li>Ask repository owners for .env and database credentials</li></ul>
+    <ul><li>Rename .env.example to only .env and these are the default configurations</li></ul>
     <li>Migrate Database</li>
     ```php artisan migrate```
+    <li>Create symbolic link to the public storage folder</li>
+    ```php artisan storage:link```
     <li>Run Application</li>
     ```php artisan serve```
 </ol>
@@ -47,7 +49,11 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
     <pre>./vendor/bin/sail artisan key:generate</pre>
     <li>After that to create the database structure run the migrations with:</li>
     <pre>./vendor/bin/sail artisan migrate --force</pre>
+    <li>Create symbolic link to the application's public storage folder</li>
+    <pre>./vendor/bin/sail artisan storage:link</pre>
+    <pre>The application will be available in your localhost. </pre>
     </ol>
+    
 
    
 
