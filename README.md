@@ -7,6 +7,15 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
 <li>Database</li>
 <li>Functional Frontend/Backend</li>
 
+
+### Admins 
+Please register using the following usernames to do CRUD operations as admin: </li>
+<li>Luke Skywalker</li>
+<li>Anakin Skywalker</li>
+<li>Yoda</li>
+<li>Obi-Wan Kenobi</li>
+
+
 ### Getting Started
 
 <ol><li>Clone The Project</li> 
@@ -33,7 +42,7 @@ A Laravel blog application styled using Tailwind CSS demonstrating the following
     ```php artisan serve```
 </ol>
     
- ### To SAIL-ize your application
+ ### To SAIL-ize your application (we recommend using the above method)
 
   
  <ol> 
