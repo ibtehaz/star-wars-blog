@@ -42,7 +42,7 @@ Please register using the following usernames to do CRUD operations as admin: </
     ```php artisan serve```
 </ol>
     
- ### To SAIL-ize your application (we recommend using the above method)
+ ### To SAIL-ize your application
 
   
  <ol> 
